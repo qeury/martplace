@@ -1,0 +1,123 @@
+.header {
+  &__top {
+    background-color: #eef1f3;
+  }
+
+  &__inner-bot,
+  &__inner-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+  }
+
+  &__box {
+    margin-left: auto;
+    margin-right: 48px;
+  }
+
+  &__btn {
+    padding: 13px 18px;
+    font-size: 14px;
+    margin-right: 50px;
+    border-radius: 18px;
+    text-decoration: none;
+  }
+
+  &__alarm {
+    margin-right: 31px;
+  }
+
+  &__envelope {
+    margin-right: 33px;
+  }
+
+  &__photo {
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  &__wrap {
+    max-width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+    color: $black;
+  }
+
+  &__price {
+    font-size: 15px;
+    color: $blue;
+  }
+}
+
+.header__menu {
+  &__inner-bot {
+    min-height: 80px;
+  }
+}
+
+.menu {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 34px;
+  }
+
+  &__link {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $black;
+  }
+}
+
+.form {
+
+  &__box {
+    max-width: 360px;
+    width: 100%;
+    min-height: 54px;
+    display: flex;
+    position: relative;
+  }
+
+  &__search {
+    flex: 0 0 100%;
+    padding: 15px 80px 15px 25px;
+    border: 1px solid #d9dfe5;
+    border-radius: 23px;
+    color: #898f96;
+    outline: transparent;
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    position: relative;
+    right: 80px;
+    outline: transparent;
+    cursor: pointer;
+  }
+}
