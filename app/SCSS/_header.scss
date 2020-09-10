@@ -6,12 +6,17 @@
   &__inner-bot,
   &__inner-top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
   }
 
   &__box {
+    display: flex;
+    align-items: center;
+    max-width: 335px;
+    width: 100%;
     margin-left: auto;
     margin-right: 48px;
   }
@@ -24,12 +29,41 @@
     text-decoration: none;
   }
 
+  &__icon {
+
+    max-width: 140px;
+    width: 100%;
+    position: relative;
+  }
+
   &__alarm {
     margin-right: 31px;
   }
 
+  &__num {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 6px;
+    background-color: #ff6a6c;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: -13px;
+  }
+
   &__envelope {
     margin-right: 33px;
+  }
+
+  &__num--env {
+    left: 65px;
+    background-color: #62d03b;
+  }
+
+  &__num--cart {
+    left: 125px;
+    background-color: $blue;
   }
 
   &__photo {
@@ -79,10 +113,10 @@
 
   &__item {
     display: inline-block;
-  }
 
-  &__item:not(:first-child) {
-    margin-left: 34px;
+    &:not(:first-child) {
+      margin-left: 34px;
+    }
   }
 
   &__link {
@@ -95,29 +129,25 @@
 }
 
 .form {
-
-  &__box {
-    max-width: 360px;
-    width: 100%;
-    min-height: 54px;
-    display: flex;
-    position: relative;
-  }
+  max-width: 360px;
+  width: 100%;
+  position: relative;
 
   &__search {
-    flex: 0 0 100%;
-    padding: 15px 80px 15px 25px;
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    padding: 15px 90px 15px 25px;
     border: 1px solid #d9dfe5;
     border-radius: 23px;
     color: #898f96;
-    outline: transparent;
   }
 
   &__btn {
     padding: 15px 30px;
-    position: relative;
-    right: 80px;
-    outline: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
   }
 }

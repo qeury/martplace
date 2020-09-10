@@ -22,9 +22,14 @@
 
           <div class="header__box">
             <a class="header__btn button"  href="#" >Become a Seller</a>
-            <a class="header__alarm icon" href="#">&#xe858;</a>
-            <a class="header__envelope icon" href="#">&#xe818;</a>
-            <a class="header__cart icon" href="#">&#xe82e;</a>
+            <div class="header__icon">
+              <a class="header__alarm icon" href="#">&#xe858;</a>
+              <span class="header__num">25</span>
+              <a class="header__envelope icon" href="#">&#xe818;</a>
+              <span class="header__num header__num--env">6</span>
+              <a class="header__cart icon" href="#">&#xe82e;</a>
+              <span class="header__num header__num--cart">2</span>
+            </div>
           </div>
 
           <div class="header__text">
@@ -76,11 +81,10 @@
           </nav>
 
           <form class="form">
-            <label class="form__box">
+            <label>
               <input class="form__search" type="search" name="search" value="Search product here..."></input>
               <button class="form__btn icon button">&#xe86f;</button>
             </label>
-
           </form>
 
         </div>
