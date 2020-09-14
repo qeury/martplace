@@ -263,19 +263,17 @@
     &:not(:nth-child(3n)) {
       margin-left: 24px;
     }
-
-
   }
 
   &__photo {
     flex: 0 0 555px;
     overflow: hidden;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
 
     &--vertical {
-    max-width: 360px;
-    flex: 0 0 230px;
-    border-radius: 4px 4px 0px 0px;
+      max-width: 360px;
+      flex: 0 0 230px;
+      border-radius: 4px 4px 0 0;
     }
   }
 
@@ -289,8 +287,7 @@
     flex: 0 0 585px;
     background-color: #fff;
     padding: 45px 50px 20px 51px;
-    border-radius: 0px 0px 4px 4px;
-
+    border-radius: 0 0 4px 4px;
 
     &--vertical {
       max-width: 361px;
@@ -299,9 +296,7 @@
       padding-right: 30px;
       padding-left: 40px;
       padding-top: 25px;
-
     }
-
   }
 
   &__title {
@@ -310,7 +305,6 @@
 
     &--vertical {
       font-size: 20px;
-
       margin-left: -11px;
     }
   }
@@ -352,7 +346,7 @@
     }
 
     &--vertical {
-    margin-left: -11px;
+      margin-left: -11px;
     }
   }
 
@@ -367,7 +361,6 @@
     margin-top: 42px;
   }
 
-
   &__btn {
     padding: 8px 13px;
     background-color: #f1f3f6;
@@ -377,9 +370,7 @@
     font-size: 15px;
     color: #868c96;
     margin-right: 8px;
-
   }
-
 }
 
 .rating {
@@ -388,11 +379,10 @@
   margin-top: 44px;
   padding-top: 20px;
 
-
-    &--vertical {
-      margin-top: -11px;
-      margin-left: -11px;
-    }
+  &--vertical {
+    margin-top: -11px;
+    margin-left: -11px;
+  }
 
   &__btn {
     padding: 9px 19px;
@@ -406,8 +396,8 @@
     }
   }
 
-  &__like,
-  &__cart {
+  &__cart,
+  &__like {
     padding-left: 15px;
     color: #555555;
     cursor: pointer;
@@ -416,7 +406,7 @@
       content: '';
       width: 16px;
       height: 14px;
-      background-image: url('../images/like.png');
+      background-image: url("../images/like.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
@@ -436,8 +426,7 @@
     &::before {
       width: 14px;
       height: 14px;
-      background-image: url('../images/cart.png');
-
+      background-image: url("../images/cart.png");
     }
 
     &--vertical {
@@ -459,7 +448,7 @@
       content: '';
       width: 5px;
       height: 25px;
-      background-image: url('../images/btn.png');
+      background-image: url("../images/btn.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -473,7 +462,7 @@
   &__page {
     justify-content: flex-start;
     margin-top: -16px;
-    padding: 30px 30px;
+    padding: 30px;
     margin-bottom: 18px;
   }
 
