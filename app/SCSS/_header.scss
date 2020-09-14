@@ -1,11 +1,7 @@
 .header {
-  &__top {
-    background-color: #eef1f3;
-  }
 
-  &__inner-top,
-  &__inner-bot
- {
+  &__inner-bot,
+  &__inner-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,20 +53,20 @@
     position: absolute;
     left: 7px;
     top: -14px;
+
+    &--env {
+      left: 64px;
+      background-color: #62d03b;
+    }
+
+    &--cart {
+      left: 116px;
+      background-color: $blue;
+    }
   }
 
   &__envelope {
-    margin-right:28px;
-  }
-
-  &__num--env {
-    left: 64px;
-    background-color: #62d03b;
-  }
-
-  &__num--cart {
-    left: 116px;
-    background-color: $blue;
+    margin-right: 28px;
   }
 
   &__text {

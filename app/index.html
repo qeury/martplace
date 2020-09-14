@@ -12,12 +12,12 @@
 
 <body>
   <header class="header">
-    <div class="header__top">
+    <div class="header__top" style="background-color: #eef1f3;">
       <div class="container">
         <div class="header__inner-top">
 
           <a href="#" class="header__logo">
-            <img src="images/logo.png" alt="png">
+            <img src="images/logo.png" alt="logo">
           </a>
 
           <div class="header__box">
@@ -34,7 +34,7 @@
 
           <div class="header__text">
             <div class="header__photo">
-              <a class="header__link" href="#"><img class="header__img" src="images/name.jpg" alt=""></a>
+              <a class="header__link" href="#"><img class="header__img" src="images/name.jpg" alt="name"></a>
             </div>
 
             <div class="header__wrap">
@@ -106,49 +106,333 @@
           </div>
           <a href="" class="create__all button">View All Products</a>
           <a href="" class="create__pop button">Popular Products</a>
-          <div class="create__panel">
-            <div class="create__box"></div>
-            <div class="create__box create__box--bg1"></div>
-            <div class="create__box create__box--bg2"></div>
+
+          <div class="create__box">
+            <form class="create__form">
+              <label>
+                <input class="create__form-search" type="search" name="search" placeholder="Search your products...">
+
+                <div class="select is-active">
+
+                  <div class="select__header">
+                    <span class="select__current">All Categories</span>
+                    <div class="select__icon icon">&#xe874;</div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">All Categories</div>
+                    <div class="select__item">Category 1</div>
+                    <div class="select__item">Category 2</div>
+                    <div class="select__item">Category 3</div>
+                    <div class="select__item">Category 4</div>
+                    <div class="select__item">Category 5</div>
+                    <div class="select__item">Category 6</div>
+                  </div>
+
+                </div>
+                <button class="create__form-btn button">
+                  Search Now
+                </button>
+              </label>
+            </form>
+          </div>
+          <div class="create__box create__box--bg1"></div>
+          <div class="create__box create__box--bg2"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__inner">
+
+          <div class="item">
+            <div class="item__photo">
+              <img src="images/best.png" alt="best" class="item__img">
+            </div>
+            <span class="item__head">Best UX Research</span>
+            <p class="item__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
           </div>
 
-          <form class="create__form">
-            <label>
-              <input class="create__form-search" type="search" name="search" placeholder="Search your products...">
+          <div class="item">
+            <div class="item__photo">
+              <img src="images/resp.png" alt="resp" class="item__img">
+            </div>
+            <span class="item__head">Fully Responsive</span>
+            <p class="item__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
+          </div>
 
-              <div class="select is-active">
+          <div class="item">
+            <div class="item__photo">
+              <img src="images/buy.png" alt="buy" class="item__img">
+            </div>
+            <span class="item__head">Buy & Sell Easily</span>
+            <p class="item__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </p>
+          </div>
 
-                <div class="select__header">
-                  <span class="select__current">All Categories</span>
-                  <div class="select__icon icon">&#xe874;</div>
-                </div>
 
-                <div class="select__body">
-                  <div class="select__item">All Categories</div>
-                  <div class="select__item">Category 1</div>
-                  <div class="select__item">Category 2</div>
-                  <div class="select__item">Category 3</div>
-                  <div class="select__item">Category 4</div>
-                  <div class="select__item">Category 5</div>
-                  <div class="select__item">Category 6</div>
-                </div>
-
-              </div>
-              <button class="create__form-btn button">
-                Search Now
-              </button>
-            </label>
-          </form>
         </div>
       </div>
     </section>
+
+    <section class="weekly" style="background-color: #eff1f5;">
+      <div class="container">
+        <div class="weekly__inner">
+          <div class="weekly__head">
+
+            <span class="weekly__text">Weekly Featured Products</span>
+            <button class="weekly__button"></button>
+
+          </div>
+
+          <div class="products">
+
+            <div class="products__photo">
+              <img class="products__img" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption">
+              <span class="products__title">One Page Resume Template</span>
+              <div class="products__templ">
+                <span class="products__name">AazzTech</span>
+                <span class="products__name products__name--purple">WordPress</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                justo ut scelerisque.
+              </p>
+
+              <div class="products__type">
+                <button class="products__btn">website</button>
+                <button class="products__btn">plugin</button>
+                <button class="products__btn">landing page</button>
+              </div>
+
+              <div class="products__rating rating line">
+                <button class="rating__btn button">$10 - $50</button>
+                <span class="rating__like">46</span>
+                <span class="rating__cart">634</span>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="newest weekly" style="background-color: #f6f7fb;">
+      <div class="container">
+        <div class="newest__inner weekly__inner">
+          <div class="newest__head weekly__head">
+
+            <span class="newest__text weekly__text">Newest Release Products</span>
+            <span class="newest__filter">Filter by:</span>
+
+          </div>
+
+          <div class="newest__page weekly__head">
+            <button class="newest__btn">Plugins</button>
+            <button class="newest__btn">WordPress</button>
+            <button class="newest__btn">Site Template</button>
+            <button class="newest__btn">PSD Template</button>
+            <button class="newest__btn">Joomla</button>
+            <button class="newest__btn">User Interface</button>
+            <button class="newest__btn">Landing Page</button>
+            <button class="newest__btn">Software</button>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products  products--vertical">
+
+            <div class="products__photo products__photo--vertical">
+              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
+            </div>
+
+            <div class="products__caption products__caption--vertical">
+              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
+              <div class="products__templ">
+                <span class="products__name products__name--vertical">Theme-Valley</span>
+                <span class="products__name products__name--purple">Plugin</span>
+              </div>
+
+              <p class="products__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </p>
+
+              <div class="products__rating rating rating--vertical line">
+                <button class="rating__btn rating__btn--vertical button">$20</button>
+                <span class="rating__like rating__like--vertical">46</span>
+                <span class="rating__cart rating__cart--vertical">634</span>
+              </div>
+
+            </div>
+
+          </div>
+          <button class="newest__new-btn button">All New Products</button>
+
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <srcrpt src="js/libs.min.js"></srcrpt>
-  <srcrpt src="js/main.min.js"></srcrpt>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
