@@ -5,434 +5,852 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martplace</title>
-
+  <link rel="icon" href="images/icons/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__top" style="background-color: #eef1f3;">
-      <div class="container">
-        <div class="header__inner-top">
+  <header class="header-top">
+    <div class="container">
+      <div class="header-top__inner flex align-items">
 
-          <a href="#" class="header__logo">
-            <img src="images/logo.png" alt="logo">
-          </a>
+        <a href="#" class="header-top__logo">
+          <img class="header-top__img size" src="images/logo.png" alt="logo-martplace">
+        </a>
 
-          <div class="header__box">
-            <a class="header__btn button" href="#">Become a Seller</a>
-            <div class="header__icon">
-              <a class="header__alarm icon" href="#">&#xe858;</a>
-              <span class="header__num">25</span>
-              <a class="header__envelope icon" href="#">&#xe818;</a>
-              <span class="header__num header__num--env">6</span>
-              <a class="header__cart icon" href="#">&#xe82e;</a>
-              <span class="header__num header__num--cart">2</span>
-            </div>
-          </div>
+        <a class="header-top__btn shadow link-effects" href="#">Become a Seller</a>
 
-          <div class="header__text">
-            <div class="header__photo">
-              <a class="header__link" href="#"><img class="header__img" src="images/name.jpg" alt="name"></a>
-            </div>
+        <ul class="header-top__icons icon indents list-style flex">
 
-            <div class="header__wrap">
-              <div class="header__name">
-                Taofiq Hakim
-              </div>
-              <div class="header__price">
-                $20.45
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="header__menu">
-      <div class="container">
-        <div class="header__inner-bot">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="#" class="menu__link">
-                  Home
-                </a>
+          <li class="icon__alarm relative lnr lnr-alarm">
+            <ul class="icon__list indents">
+              <li class="icon__item">
+                <a class="icon__title" href="#">My Notifications</a>
+                <span class="icon__text">View All</span>
               </li>
-              <li class="menu__item"><a href="#" class="menu__link">
-                  All products
-                </a>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Anderson</a>
+                <span class="icon__text">added to Favourite</span>
+                <a class="icon__link block" href="#">Marketify Coffee Shop</a>
+                <span class="icon__text">Just now</span>
               </li>
-              <li class="menu__item"><a href="#" class="menu__link">
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Michael Jorden</a>
+                <span class="icon__text"> commented on</span>
+                <a class="icon__link block" href="#">MartPlace Extension Bundle</a>
+                <span class="icon__text">2 hours ago</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Moshed</a>
+                <span class="icon__text">Purchased</span>
+                <a class="icon__link block" href="#">Bryson-Responsive Template</a>
+                <span class="icon__text">6 hours ago</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Tamim</a>
+                <span class="icon__text">wrote a review on</span>
+                <a class="icon__link block" href="#">Rida-Responsive vCard Temp...</a>
+                <span class="icon__text">2 days ago</span>
+              </li>
+            </ul>
+            <span class="icon__num icon__num--red absolute">25</span>
+          </li>
+
+          <li class="icon__envelope relative lnr lnr-envelope">
+
+            <ul class="icon__list indents">
+              <li class="icon__item">
+                <a class="icon__title" href="#">My Messages</a>
+                <span class="icon__text">View All</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Washim</a>
+                <span class="icon__text">Just now</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Bulbul Ahmed </a>
+                <span class="icon__text">2 hours ago</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">EchoTheme</a>
+                <span class="icon__text">Jul 16</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Themeluva</a>
+                <span class="icon__text">May 23</span>
+              </li>
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">Adnan</a>
+                <span class="icon__text">Mar 26</span>
+              </li>
+
+            </ul>
+            <span class="icon__num icon__num--green absolute">6</span>
+          </li>
+
+          <li class="icon__cart relative lnr lnr-cart">
+            <ul class="icon__list indents">
+              <li class="icon__item">
+                <a class="icon__name" href="#">
+                  Finance and Consulting
+                  Business Theme
+                </a>
+                <a class="icon__link block" href="#">
                   Wordpress
+                  <span class="icon__price">$60</span>
                 </a>
               </li>
-              <li class="menu__item"><a href="#" class="menu__link">
-                  Festures
+
+              <li class="icon__item">
+                <a class="icon__name" href="#">
+                  Flounce - Multipurpose
+                  OpenCart Theme
+                </a>
+                <a class="icon__link block" href="#">
+                  Wordpress
+                  <span class="icon__price">$20</span>
                 </a>
               </li>
-              <li class="menu__item"><a href="#" class="menu__link">
-                  Pages
+
+              <li class="icon__item">
+                <span class="icon__name block">
+                  Total : $80
+                </span>
+                <a class="icon__btn link-effects" href="#">
+                  Go to Cart
+                </a>
+                <a class="icon__btn link-effects" href="#">
+                  Go to Checkout
                 </a>
               </li>
             </ul>
-          </nav>
+            <span class="icon__num icon__num--blue absolute">2</span>
+          </li>
 
-          <form class="form">
-            <label>
-              <input class="form__search" type="search" name="search" placeholder="Search product here..."></input>
-              <button class="form__btn icon button">&#xe86f;</button>
-            </label>
-          </form>
+        </ul>
 
-        </div>
+        <ul class="header-top__account account indents list-style flex wrap align-items">
+
+          <li class="account__photo"><img class="account__img size" src="images/name.jpg" alt="name"></li>
+
+          <li class="account__name">
+            Taofiq Hakim
+            <span class="account__price block">$20.45</span>
+
+            <ul class="account__list indents">
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Profile Page
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Account Settings
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Your Purchases
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Your Favorites
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Add Credits
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Sales Statements
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Upload Item
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Edit Item
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Withdrawals
+                </a>
+              </li>
+
+              <li class="account__item">
+                <a href="#" class="account__link">
+                  Logout
+                </a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
 
-  <main class="main">
+  <header class="header__bot">
+    <div class="container">
+      <div class="header-bot__inner flex between align-items">
 
-    <section class="create" style="background-color: #441c7c; background-image: linear-gradient(-90.0deg, #0030de 0%, #2e5afb 100%);">
+        <nav class="menu">
+          <ul class="menu__list indents list-style flex wrap">
+            <li class="menu__item">
+              <a class="menu__link" href="href#">
+                Home
+              </a>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home One Multi User</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home Two Single User</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home Three Product</a></li>
+              </ul>
+            </li>
+
+            <li class="menu__item">
+              <a href="href#" class="menu__link">
+                All Products
+              </a>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Recent Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Popular Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Featured Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Free Templates</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Follow Feed</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Top Authors</a></li>
+              </ul>
+            </li>
+
+            <li class="menu__item">
+              <a href="href#" class="menu__link">
+                Wordpress
+              </a>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Popular Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Admin Templates</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Blog / Magazine / News</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Creative</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Corporate Business</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Resume Portfolio</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">eCommerce</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Entertainment</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Landing Pages</a></li>
+              </ul>
+            </li>
+
+            <li class="menu__item">
+              <a href="href#" class="menu__link">
+                Festures
+              </a>
+            </li>
+
+            <li class="menu__item flex">
+              <a href="href#" class="menu__link">
+                Pages
+              </a>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__head">MartPlace Pages</li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home Page One</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home Page Two</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Home Page Three</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Products Grid</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Products List</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Category Grid Sidebar</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Category List Sidebar</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Search Product</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Product V-1</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Product V-2</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Product V-3</a></li>
+              </ul>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Items Comments</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Items Reviews</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Items Support</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Single Items FAQs</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Favorites Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Author Profile</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Author Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Customer Reviews</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Followers</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Following</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Product View Variations</a></li>
+              </ul>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__head">Dashboard</li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Dashboard</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Account Settings</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Author Purchases</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Items Rating</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Add Credits</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Statements</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Invoice</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Upload Item</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Edit Items</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Withdrawals</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Add Payment Method</a></li>
+              </ul>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__head">Others Pages</li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Notifications</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Message Inbox</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Message Compose</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Shopping Cart</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Checkout</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Login</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Register</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Recovery Password</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Support Forum</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Forum Details</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">How It Works</a></li>
+              </ul>
+
+              <ul class="menu__drop drop-down">
+                <li class="drop-down__item"><a href="#" class="drop-down__link">About Us</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Pricing Plan</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Testimonials</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">FAQs</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">FAQs Details</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Affiliates</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Terms & Conditions</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Blog V-1</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Blog V-2</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Blog Details</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Contact Us</a></li>
+                <li class="drop-down__item"><a href="#" class="drop-down__link">Menu & Footer Variation</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </nav>
+
+        <form class="header-bot__form relative">
+          <label>
+            <span class="visually-hidden">Search product here...</span>
+            <input class="header-bot__search form-effects" type="search" name="search" placeholder="Search product here...">
+          </label>
+          <button type="submit" class="header-bot__btn btn-effects absolute lnr lnr-magnifier">
+            <span class="visually-hidden">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="create">
       <div class="container">
-        <div class="create__inner">
-          <div class="create__own">
+        <div class="create__inner relative">
+          <p class="create__title indents">
             Create Your Own
-            <span class="create__bg">Digital Product Marketplace</span>
-          </div>
-          <div class="create__custom">
+            <b class="create__head block">Digital Product Marketplace</b>
+          </p>
+
+          <p class="create__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-          </div>
-          <a href="" class="create__all button">View All Products</a>
-          <a href="" class="create__pop button">Popular Products</a>
+          </p>
 
-          <div class="create__box">
-            <form class="create__form">
+
+          <a class="create__all shadow link-effects btn--mid " href="#">View All Products</a>
+          <a class="create__pop shadow link-effects  btn--mid" href="#">Popular Products</a>
+
+          <div class="create__search search-box absolute ">
+
+            <form class="search-box__form">
+
               <label>
-                <input class="create__form-search" type="search" name="search" placeholder="Search your products...">
-
-                <div class="select is-active">
-
-                  <div class="select__header">
-                    <span class="select__current">All Categories</span>
-                    <div class="select__icon icon">&#xe874;</div>
-                  </div>
-
-                  <div class="select__body">
-                    <div class="select__item">All Categories</div>
-                    <div class="select__item">Category 1</div>
-                    <div class="select__item">Category 2</div>
-                    <div class="select__item">Category 3</div>
-                    <div class="select__item">Category 4</div>
-                    <div class="select__item">Category 5</div>
-                    <div class="select__item">Category 6</div>
-                  </div>
-
-                </div>
-                <button class="create__form-btn button">
-                  Search Now
-                </button>
+                <span class="visually-hidden">Search your products...</span>
+                <input class="search-box__search form-effects" type="search" name="search" placeholder="Search your products...">
               </label>
+
+              <label class="search-box__icon relative">
+                <select class="search-box__select form-effects" name="select">
+                  <option selected disabled>All Categories</option>
+                  <option value="product 1">product 1</option>
+                  <option value="product 2">product 2</option>
+                  <option value="product 3">product 3</option>
+                  <option value="product 4">product 4</option>
+                  <option value="product 5">product 5</option>
+                </select>
+              </label>
+
+              <button type="submit" class="search-box__btn btn btn-effects btn--blue">Search Now</button>
+
             </form>
+
           </div>
-          <div class="create__box create__box--bg1"></div>
-          <div class="create__box create__box--bg2"></div>
         </div>
       </div>
-
     </section>
 
     <section class="benefits">
       <div class="container">
         <div class="benefits__inner">
 
-          <div class="item">
-            <div class="item__photo">
-              <img src="images/best.png" alt="best" class="item__img">
-            </div>
-            <span class="item__head">Best UX Research</span>
-            <p class="item__text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
+          <ul class="benefits__list list-style indents flex between">
 
-          <div class="item">
-            <div class="item__photo">
-              <img src="images/resp.png" alt="resp" class="item__img">
-            </div>
-            <span class="item__head">Fully Responsive</span>
-            <p class="item__text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
+            <li class="benefits__item">
+              <img class="benefits__img size" src="images/best.png" alt="best">
+              <p class="benefits__head">
+                Best UX Research
+              </p>
+              <p class="benefits__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </p>
+            </li>
 
-          <div class="item">
-            <div class="item__photo">
-              <img src="images/buy.png" alt="buy" class="item__img">
-            </div>
-            <span class="item__head">Buy & Sell Easily</span>
-            <p class="item__text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
+            <li class="benefits__item">
+              <img class="benefits__img size" src="images/resp.png" alt="resp">
+              <p class="benefits__head">
+                Fully Responsive
+              </p>
+              <p class="benefits__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </p>
+            </li>
 
+            <li class="benefits__item">
+              <img class="benefits__img size" src="images/buy.png" alt="buy">
+              <p class="benefits__head">
+                Buy & Sell Easily
+              </p>
+              <p class="benefits__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </p>
+            </li>
+          </ul>
 
         </div>
       </div>
     </section>
 
-    <section class="weekly" style="background-color: #eff1f5;">
+    <section class="week-prod">
       <div class="container">
-        <div class="weekly__inner">
-          <div class="weekly__head">
+        <div class="week-prod__inner">
 
-            <span class="weekly__text">Weekly Featured Products</span>
-            <button class="weekly__button"></button>
-
+          <div class="week-prod__box product between">
+            <p class="product__head">
+              Weekly Featured Products
+            </p>
+            <button class="product__btn btn-effects"></button>
           </div>
 
-          <div class="products">
+          <div class="week-prod__card card">
 
-            <div class="products__photo">
-              <img class="products__img" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption">
-              <span class="products__title">One Page Resume Template</span>
-              <div class="products__templ">
-                <span class="products__name">AazzTech</span>
-                <span class="products__name products__name--purple">WordPress</span>
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
-                justo ut scelerisque.
-              </p>
-
-              <div class="products__type">
-                <button class="products__btn">website</button>
-                <button class="products__btn">plugin</button>
-                <button class="products__btn">landing page</button>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
               </div>
+            </article>
 
-              <div class="products__rating rating line">
-                <button class="rating__btn button">$10 - $50</button>
-                <span class="rating__like">46</span>
-                <span class="rating__cart">634</span>
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
               </div>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
+              </div>
+            </article>
 
-            </div>
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
+              </div>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
+              </div>
+            </article>
 
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
+              </div>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
+              </div>
+            </article>
 
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
+              </div>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
+              </div>
+            </article>
+
+            <article class="card__item week-prod__item">
+              <div class="card__hover week-prod__hover">
+                <a class="card__btn card__info card__btn btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo card__btn btn--mid" href="#">Live Demo</a>
+              </div>
+              <div class="card__img week-prod__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr week-prod__descr">
+                <p class="card__head week-prod__head">One Page Resume Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">WordPress</a>
+                <p class="card__text week-prod__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                  justo ut scelerisque.
+                </p>
+                <a href="#" class="week-prod__btn  btn--grey">website</a>
+                <a href="#" class="week-prod__btn  btn--grey">plugin</a>
+                <a href="#" class="week-prod__btn  btn--grey">landing page</a>
+                <p class="card__icons week-prod__icons">
+                  <span class="card__price card__price">$10 - $50</span>
+                  <span class="card__like lnr lnr-heart"> 46</span>
+                  <span class="card__cart week-prod__cart lnr lnr-cart"> 246</span>
+                  <span class="card__star week-prod__star"></span>
+                </p>
+              </div>
+            </article>
           </div>
+
         </div>
       </div>
-
     </section>
 
-    <section class="newest weekly" style="background-color: #f6f7fb;">
+    <section class="new-prod">
       <div class="container">
-        <div class="newest__inner weekly__inner">
-          <div class="newest__head weekly__head">
+        <div class="new-prod__inner">
 
-            <span class="newest__text weekly__text">Newest Release Products</span>
-            <span class="newest__filter">Filter by:</span>
+          <div class="new-prod__box product between">
+            <p class="product__head">
+              Newest Release Products
+            </p>
+
+            <ul class="new-prod__filter filter indents list-style flex">
+              <li class="filter__group">
+                <span class="filter__head">Filter by:</span>
+                <ul class="filter__list indents list-style absolute none">
+                  <li class="filter__item"><a href="#" class="new-prod__link">Trending items</a></li>
+                  <li class="filter__item"><a href="#" class="new-prod__link">Best seller</a></li>
+                  <li class="filter__item"><a href="#" class="new-prod__link">Best rating</a></li>
+                  <li class="filter__item"><a href="#" class="new-prod__link">Low price</a></li>
+                  <li class="filter__item"><a href="#" class="new-prod__link">High price</a></li>
+                </ul>
+              </li>
+            </ul>
 
           </div>
 
-          <div class="newest__page weekly__head">
-            <button class="newest__btn">Plugins</button>
-            <button class="newest__btn">WordPress</button>
-            <button class="newest__btn">Site Template</button>
-            <button class="newest__btn">PSD Template</button>
-            <button class="newest__btn">Joomla</button>
-            <button class="newest__btn">User Interface</button>
-            <button class="newest__btn">Landing Page</button>
-            <button class="newest__btn">Software</button>
+          <div class="new-prod__option product">
+            <button data-filter=".category-plugins" class="new-prod__btn btn--sm">Plugins</button>
+            <button data-filter=".category-wordpress" class="new-prod__btn  btn--sm btn--grey">WordPress</button>
+            <button data-filter=".category-site" class="new-prod__btn  btn--sm btn--grey">Site Template</button>
+            <button data-filter=".category-psd" class="new-prod__btn  btn--sm btn--grey">PSD Template</button>
+            <button data-filter=".category-joomla" class="new-prod__btn  btn--sm btn--grey">Joomla</button>
+            <button data-filter=".category-interface" class="new-prod__btn btn--sm btn--grey">User Interface</button>
+            <button data-filter=".category-landing" class="new-prod__btn btn--sm btn--grey">Landing Page</button>
+            <button data-filter=".category-software" class="new-prod__btn btn--sm btn--grey">Software</button>
           </div>
 
-          <div class="products  products--vertical">
+          <div class="new-prod__card card flex wrap between">
 
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+            <article class="card__item mix category-plugins category-wordpres category-joomla category-site category-new">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">E-commerce Shopping Cart</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">Theme-Valley</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">Plugin</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
+              </div>
+              <p class="card__icons">
+                <span class="card__price">$20</span>
+                <span class="card__like lnr lnr-heart"> 90</span>
+                <span class="card__cart lnr lnr-cart"> 246</span>
               </p>
+            </article>
 
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
+            <article class="card__item mix category-wordpress category-site category-landing category-psd category-new">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-            </div>
-          </div>
-
-          <div class="products  products--vertical">
-
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">Marketify Coffee Shop</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">EchoTheme</a>
+                <img class="card__theme card__theme--sm size" src="images/icons/ps.png" alt="ps">
+                <a href="#" class="card__link card__link--purple">PSD</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <p class="card__icons">
+                <span class="card__price"> $18</span>
+                <span class="card__like lnr lnr-heart"> 48</span>
+                <span class="card__cart lnr lnr-cart"> 50</span>
               </p>
+            </article>
 
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
+            <article class="card__item mix category-site category-psd category-joomla category-interface category-new">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-            </div>
-          </div>
-
-          <div class="products  products--vertical">
-
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">Bryson - Portfolio Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">Artcorner</a>
+                <img class="card__theme card__theme--mid size" src="images/icons/html.png" alt="html">
+                <a href="#" class="card__link card__link--purple">HTML</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <p class="card__icons">
+                <span class="card__price">$10</span>
+                <span class="card__like lnr lnr-heart"> 56</span>
+                <span class="card__star"></span>
+                <span class="card__cart lnr lnr-cart"> 68</span>
               </p>
+            </article>
 
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
+            <article class="card__item mix category-psd category-joomla category-interface category-software category-wordpress">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-            </div>
-          </div>
-
-          <div class="products  products--vertical">
-
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">E-commerce Shopping Cart</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">Design-Hub</a>
+                <img class="card__theme size" src="images/icons/word.png" alt="wordpress">
+                <a href="#" class="card__link card__link--purple">Plugin</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <p class="card__icons">
+                <span class="card__price">$10 - 50</span>
+                <span class="card__like lnr lnr-heart"> 90</span>
+                <span class="card__star"></span>
+                <span class="card__cart lnr lnr-cart"> 45</span>
               </p>
+            </article>
 
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
+            <article class="card__item mix category-joomla category-landing category-software category-wordpress">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-            </div>
-          </div>
-
-          <div class="products  products--vertical">
-
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">Marketify Coffee Shop</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">AazzTech</a>
+                <img class="card__theme card__theme--sm size" src="images/icons/ps.png" alt="ps">
+                <a href="#" class="card__link card__link--purple">PSD</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <p class="card__icons">
+                <span class="card__price">$10 - 50</span>
+                <span class="card__like lnr lnr-heart"> 48</span>
+                <span class="card__cart lnr lnr-cart"> 50</span>
               </p>
+            </article>
 
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
+            <article class="card__item mix category-software category-landing category-wordpress category-interface">
+              <div class="card__hover">
+                <a class="card__btn card__info btn--mid" href="#">More Info</a>
+                <a class="card__btn card__demo btn--mid" href="#">Live Demo</a>
               </div>
-
-            </div>
-          </div>
-
-          <div class="products  products--vertical">
-
-            <div class="products__photo products__photo--vertical">
-              <img class="products__img products__img--vert" src="images/product.jpg" alt="product">
-            </div>
-
-            <div class="products__caption products__caption--vertical">
-              <span class="products__title products__title--vertical">E-commerce Shopping Cart</span>
-              <div class="products__templ">
-                <span class="products__name products__name--vertical">Theme-Valley</span>
-                <span class="products__name products__name--purple">Plugin</span>
+              <div class="card__img" style="background-image: url('images/product.jpg');"></div>
+              <div class="card__descr">
+                <p class="card__head">Bryson - Portfolio Template</p>
+                <img class="card__name size" src="images/name.jpg" alt="name photo">
+                <a href="#" class="card__link">Coder-Lab</a>
+                <img class="card__theme size" src="images/icons/html.png" alt="html">
+                <a href="#" class="card__link card__link--mid card__link--purple">HTML</a>
+                <p class="card__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
               </div>
-
-              <p class="products__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
+              <p class="card__icons">
+                <span class="card__price">$20</span>
+                <span class="card__like lnr lnr-heart"> 56</span>
+                <span class="card__star"></span>
+                <span class="card__cart lnr lnr-cart"> 68</span>
               </p>
-
-              <div class="products__rating rating rating--vertical line">
-                <button class="rating__btn rating__btn--vertical button">$20</button>
-                <span class="rating__like rating__like--vertical">46</span>
-                <span class="rating__cart rating__cart--vertical">634</span>
-              </div>
-
-            </div>
-
+            </article>
           </div>
-          <button class="newest__new-btn button">All New Products</button>
+
+          <button type="button" data-filter=".category-new" class="new-prod__all shadow btn-effects btn--mid block">All New Products</button>
 
         </div>
       </div>
     </section>
-
-
   </main>
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

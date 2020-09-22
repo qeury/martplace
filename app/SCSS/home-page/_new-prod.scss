@@ -1,0 +1,46 @@
+.new-prod {
+  background-color: $light-grey;
+
+  &__inner {
+    min-height: 1726px;
+    padding-top: 120px;
+  }
+
+  &__option {
+    min-height: 92px;
+    margin-top: 30px;
+    padding-left: 21px;
+  }
+
+  &__btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: #747b86;
+    margin-left: 10px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+
+    &:active {
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      background-color: $blue;
+      color: #fff;
+      border: 1px solid rgba(0, 169, 255, 0.4);
+    }
+  }
+
+  &__all {
+    max-width: 195px;
+    min-height: 55px;
+    background-color: $blue;
+    color: #fff;
+    margin: 55px auto;
+    transition: all 0.3s;
+  }
+}

@@ -1,0 +1,81 @@
+.btn {
+  color: #fff;
+  padding: 18px 66px;
+  border-radius: 4px;
+
+  &--mid {
+    padding: 18px 33px;
+    border-radius: 27px;
+  }
+
+  &--sm {
+    padding: 7px 19px;
+    border-radius: 16px;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--grey {
+    background-color: #f1f3f6;
+  }
+}
+
+.btn-effects:hover {
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.2));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-effects:active,
+.link-effects:active {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-effects:focus,
+.link-effects:focus {
+  outline: transparent;
+  border: 1px solid rgba(0, 169, 255, 0.4);
+}
+
+.link-effects:hover {
+  background-color: #ffffff;
+  color: $blue;
+}
+
+.form-effects:hover {
+  box-shadow: 0 0 2px $blue;
+}
+
+.form-effects:active {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.form-effects:focus {
+  border: 1px solid rgba(0, 169, 255, 0.4);
+}
+
+.slick-next,
+.slick-prev {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  top: -115px;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 0.7;
+}
+
+.slick-prev {
+  right: 50px;
+}
+
+.slick-next {
+  right: 100px;
+}

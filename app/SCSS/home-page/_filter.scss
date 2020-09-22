@@ -1,0 +1,21 @@
+.filter {
+  color: #747b86;
+  font-weight: 500;
+  padding-right: 30px;
+
+  &::after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: url("../images/icons/btn.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  &:hover::after {
+    opacity: 0.4;
+  }
+}
