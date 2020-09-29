@@ -1,26 +1,52 @@
 .benefits {
   &__inner {
     margin-top: 186px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+  }
+
+  &__list {
+    @include list-style;
+    @include indents;
+    margin-left: 10px;
   }
 
   &__item {
     max-width: 361px;
     width: 100%;
     text-align: center;
-    padding: 41px 35px 49px;
+    padding: 41px 35px 39px;
     line-height: 28px;
     color: #555555;
-    transition: all 0.5s;
+    border-radius: 4px;
+    transition: box-shadow 0.5s;
 
     &:hover {
       box-shadow: 0 2px 50px 0 rgba(0,0,0,0.07);
-      border-radius: 4px;
     }
   }
 
-  &__head {
+  &__img {
+    max-width: 113px;
+    min-height: 113px;
+    background-image: url("../images/best.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 0 auto;
+
+    &--resp {
+      background-image: url("../images/resp.png");
+    }
+
+    &--buy {
+      background-image: url("../images/buy.png");
+    }
+  }
+
+  &__title {
+    display: block;
     font-size: 24px;
     font-weight: 500;
+    margin-top: 38px;
   }
 }

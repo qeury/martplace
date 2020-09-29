@@ -1,4 +1,25 @@
 @font-face {
+  font-family: 'Linearicons-Free';
+  src: url("../fonts/Linearicons-Free/Linearicons-Free.woff2") format('woff2'),
+       url("../fonts/Linearicons-Free/Linearicons-Free.woff") format('woff'),
+       url("../fonts/Linearicons-Free/Linearicons-Free.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/Quicksand-Light/Quicksand.woff2") format('woff2'),
+       url("../fonts/Quicksand-Light/Quicksand.woff") format('woff'),
+       url("../fonts/Quicksand-Light/Quicksand.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'Quicksand';
   src: url("../fonts/Quicksand-Regular/Quicksand.woff2") format('woff2'),
        url("../fonts/Quicksand-Regular/Quicksand.woff") format('woff'),
@@ -26,23 +47,4 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
-
-.lnr {
-  font-size: 15px;
-}
-
-.lnr-alarm,
-.lnr-envelope,
-.lnr-cart {
-  font-size: 20px;
-  color: #7e8fa1;
-}
-
-.lnr-chevron-down {
-  font-size: 12px;
-}
-
-.lnr-magnifier {
-  color: #fff;
 }

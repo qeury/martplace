@@ -3,3 +3,16 @@ $grey: #eef1f3;
 $light-grey: #f6f7fb;
 $blue: #0674ec;
 $purple: #7347c1;
+$yellow: #feb71d;
+$light-blue: #58c9e9;
+$green: #77de51;
+$red: #ff6a6d;
+
+@mixin indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-style {
+  list-style: none;
+}

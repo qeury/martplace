@@ -1,0 +1,56 @@
+.followers {
+  background-color: $grey;
+
+  &__inner {
+    padding-top: 120px;
+    padding-bottom: 89px;
+  }
+
+  &__slider {
+    margin-top: 51px;
+  }
+
+  &__arrow {
+    border: none;
+    background-color: $blue;
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    outline: transparent;
+
+    &:focus {
+      background-color: rgba($blue, 0.9);
+      box-shadow: 0 0 5px 0 rgba($blue, 0.8);
+    }
+
+    &:hover {
+      background-color: rgba($blue, 0.8);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px 0 rgba($blue, 0.5);
+    }
+  }
+
+  &__text {
+    overflow: hidden;
+
+    &:hover {
+      overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5);
+    }
+  }
+
+}

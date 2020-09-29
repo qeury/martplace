@@ -2,6 +2,12 @@
   color: #747b86;
   font-weight: 500;
   padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover &__menu {
+    visibility: visible;
+  }
 
   &::after {
     content: "";
@@ -10,12 +16,39 @@
     background: url("../images/icons/btn.png") no-repeat;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 25px;
-    cursor: pointer;
+    margin-left: 18px;
     transition: all 0.2s;
   }
 
   &:hover::after {
     opacity: 0.4;
+  }
+
+
+  &__menu {
+    width: 183px;
+    padding: 17px 0 27px 28px;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+  }
+
+  &__list {
+    @include indents;
+    @include list-style;
+  }
+
+  &__btn {
+    font-size: 15px;
+    color: #747b86;
+    background: transparent;
+    padding-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
   }
 }

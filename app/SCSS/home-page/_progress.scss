@@ -1,0 +1,47 @@
+.progress {
+  background-color: rgba(13, 15, 19, 0.9);
+
+  &__inner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    @include indents;
+    @include list-style;
+    text-align: center;
+  }
+
+  &__item {
+    font-size: 48px;
+  }
+
+  &__briefcase {
+    color: $yellow;
+  }
+
+  &__cloud {
+    color: $light-blue;
+  }
+
+  &__smile {
+    color: $green;
+  }
+
+  &__users {
+    color: $red;
+  }
+
+  &__count {
+    font-family: 'Quicksand';
+    font-size: 36px;
+    margin-top: 42px;
+  }
+
+  &__text {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 18px;
+  }
+}

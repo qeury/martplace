@@ -1,0 +1,68 @@
+.auction {
+  &__inner {
+    text-align: center;
+    margin-top: 89px;
+  }
+
+
+  &__block,
+  &__logo {
+    max-width: 960px;
+    width: 100%;
+    background-image: url("../images/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid transparent;
+  }
+
+  &__block {
+    min-height: 561px;
+
+    &--left {
+      background-image: url('../images/bg-2.jpg');
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    height: 101px;
+    background-image: url("../images/icons/sell.svg");
+    margin: 100px auto 0;
+
+    &--left {
+      width: 100px;
+      height: 100px;
+      background-image: url('../images/icons/buy.svg');
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-top: 44px;
+  }
+
+  &__text {
+    max-width: 600px;
+    width: 100%;
+    margin: 17px auto 63px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  &__btn {
+    padding: 18px 25px;
+    transition: all 0.5s;
+
+    &--left {
+      padding: 18px 40px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}

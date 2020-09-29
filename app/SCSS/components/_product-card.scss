@@ -1,23 +1,21 @@
-.card {
-  margin-top: 51px;
+.product-card {
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(107,110,115,0.1);
+  max-width: 361px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 25px;
 
-  &__item {
-    max-width: 361px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
 
-    &:nth-child(N + 4) {
-      margin-top: 28px;
-    }
+  &:hover &__hover {
+    overflow: visible;
+    height: 230px;
   }
 
   &__hover {
     overflow: hidden;
     position: absolute;
-    opacity: 0.9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,13 +23,10 @@
     height: 0;
     width: 100%;
     text-align: center;
+    border-radius: 4px 4px 0 0;
     background-color: #009688;
     background-image: linear-gradient(-90.0deg, #0674ec 0%, #7347c1 100%);
     transition: all 1s;
-  }
-
-  &__item:hover &__hover {
-    height: 230px;
   }
 
   &__btn {
@@ -40,9 +35,16 @@
     font-weight: 500;
     border: 1px solid #f4f4f4;
     box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
-    padding: 10px 20px;
+    padding: 13px 25px;
     border-radius: 22px;
     transition: all 0.5s;
+
+
+
+    &:focus {
+      outline: transparent;
+      border: 1px solid rgba(0, 169, 255, 0.4);
+    }
 
     &:hover {
       background-color: #ffffff;
@@ -52,50 +54,63 @@
     &:active {
       box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
     }
+  }
 
-    &:focus {
-      outline: transparent;
-      border: 1px solid rgba(0, 169, 255, 0.4);
-    }
+  &__info {
+    padding: 13px 30px;
   }
 
   &__demo {
-    margin-left: 15px;
+    margin-left: 12px;
+    color: $blue;
+
+    &:hover {
+      color: white;
+      background-color: transparent;
+    }
   }
 
   &__img {
-    min-height: 230px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    max-width: 361px;
+    width: 100%;
+    height: 230px;
     border-radius: 4px 4px 0 0;
+    object-fit: cover;
   }
 
-  &__descr {
-    padding-top: 8px;
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-  }
 
   &__head {
     font-size: 24px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
+    padding-top: 8px;
+    margin-top: 15px;
     color: #000000;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__head,
+  &__develop,
+  &__text {
+    padding-left: 30px;
+    padding-right: 39px;
   }
 
   &__name {
-    display: inline !important;
     vertical-align: middle;
     border-radius: 50%;
     width: 28px;
     height: 28px;
   }
 
+  &__photo {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
   &__theme {
-    display: inline !important;
     vertical-align: middle;
     width: 16px;
     height: 16px;
@@ -115,39 +130,30 @@
   &__link {
     padding-left: 5px;
     font-size: 15px;
-    font-weight: 700;
     color: #000;
     position: relative;
-
-    &--purple {
-      padding-left: 0;
-      color: $purple;
-    }
   }
 
   &__text {
+    height: 95px;
     line-height: 30px;
     color: #555555;
     margin-top: 25px;
-    padding-bottom: 12px;
+    padding-left: 30px;
+    margin-bottom: 27px;
   }
 
-  &__icons {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    max-width: 361px;
-    width: 100%;
+  &__details {
+    font-size: 15px;
     border-top: 1px solid #ececec;
     color: #6f7d8d;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 30px;
-    padding-bottom: 5px;
-    position: relative;
+    padding-bottom: 28px;
   }
 
   &__price {
-    padding: 10px 17px;
+    padding: 8px 20px;
     background-color: #e6f1fd;
     border-radius: 15px;
     font-size: 13px;
@@ -155,18 +161,24 @@
   }
 
   &__like {
-    margin-left: 20px;
+    background-color: transparent;
     color: $purple;
   }
 
   &__cart {
+    background-color: transparent;
     font-size: 15px;
     color: $blue;
-    position: absolute;
-    right: 35px;
+    margin-right: 23px;
   }
 
   &__star {
-    margin-left: 13px;
+    display: inline-block;
+  }
+
+  &__count {
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 400;
   }
 }
