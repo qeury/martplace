@@ -21,8 +21,18 @@ $(function() {
     slidesToScroll: 1,
   });
 
+  $('.reviews__slider').slick({
+    prevArrow: '<button class="reviews__arrow  reviews__arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="reviews__arrow  reviews__arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  });
+
+  $('.progress__count').counterUp({delay:10, time:1000});
+
   let mixer = mixitup('.new-product__columns');
 
-  new SimpleBar(document.getElementById('scroll-1'));
+
 
 });
+

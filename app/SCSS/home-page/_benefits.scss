@@ -1,7 +1,7 @@
 .benefits {
   &__inner {
     margin-top: 186px;
-    margin-bottom: 120px;
+    margin-bottom: 127px;
   }
 
   &__list {
@@ -14,7 +14,7 @@
     max-width: 361px;
     width: 100%;
     text-align: center;
-    padding: 41px 35px 39px;
+    padding: 41px 30px 34px;
     line-height: 28px;
     color: #555555;
     border-radius: 4px;
@@ -44,9 +44,19 @@
   }
 
   &__title {
-    display: block;
     font-size: 24px;
     font-weight: 500;
     margin-top: 38px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__text {
+    height: 110px;
+    padding: 0 5px 5px;
   }
 }

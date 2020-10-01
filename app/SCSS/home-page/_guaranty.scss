@@ -1,0 +1,41 @@
+.guaranty {
+  &__inner {
+    text-align: center;
+    margin-top: -5px;
+    padding-bottom: 37px;
+  }
+
+  &__block {
+    max-width: 600px;
+    width: 100%;
+    padding-top: 70px;
+    padding-right: 35px;
+
+    &--right {
+      border-left: 1px solid #e8eaf3;
+    }
+  }
+
+
+  &__img{
+    max-width: 150px;
+    width: 100%;
+    min-height: 120px;
+    background-image: url('../images/money.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+    &--right {
+      max-width: 155px;
+      width: 100%;
+      min-height: 117px;
+      background-image: url('../images/support.png');
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+}

@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   margin-bottom: 25px;
-
+  align-self: baseline;
 
   &:hover &__hover {
     overflow: visible;
@@ -38,8 +38,6 @@
     padding: 13px 25px;
     border-radius: 22px;
     transition: all 0.5s;
-
-
 
     &:focus {
       outline: transparent;
@@ -78,7 +76,6 @@
     object-fit: cover;
   }
 
-
   &__head {
     font-size: 24px;
     font-size: 20px;
@@ -87,10 +84,16 @@
     margin-top: 15px;
     color: #000000;
     padding-bottom: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  &__head,
   &__develop,
+  &__head,
   &__text {
     padding-left: 30px;
     padding-right: 39px;

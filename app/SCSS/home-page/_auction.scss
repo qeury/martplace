@@ -17,9 +17,9 @@
   }
 
   &__block {
-    min-height: 561px;
+    min-height: 564px;
 
-    &--left {
+    &--right {
       background-image: url('../images/bg-2.jpg');
     }
   }
@@ -30,7 +30,7 @@
     background-image: url("../images/icons/sell.svg");
     margin: 100px auto 0;
 
-    &--left {
+    &--right {
       width: 100px;
       height: 100px;
       background-image: url('../images/icons/buy.svg');
@@ -55,7 +55,7 @@
     padding: 18px 25px;
     transition: all 0.5s;
 
-    &--left {
+    &--right {
       padding: 18px 40px;
     }
 

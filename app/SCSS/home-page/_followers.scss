@@ -10,6 +10,8 @@
     margin-top: 51px;
   }
 
+
+
   &__arrow {
     border: none;
     background-color: $blue;
@@ -53,4 +55,12 @@
     }
   }
 
+}
+
+.followers__slider .slick-list {
+  margin-left: -20px;
+}
+
+.followers__slider .slick-slide {
+  margin-left: 20px;
 }

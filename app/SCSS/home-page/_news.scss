@@ -1,0 +1,60 @@
+.news {
+  background-color: #eff1f5;
+
+  &__inner {
+    margin-top: 136px;
+    padding-top: 115px;
+    padding-bottom: 98px;
+    text-align: center;
+  }
+
+  &__card {
+    text-align: start;
+  }
+
+
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__details {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__wrap {
+    border-right: 1px solid #ececec;
+    padding: 10px 5px;
+  }
+
+  &__clock {
+    font-size: 15px;
+    color: $blue;
+  }
+
+  &__time {
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: #999999;
+    padding-right: 40px;
+  }
+
+  &__bubble {
+    background-color: transparent;
+    font-size: 15px;
+    color: #7e7e7e;
+    cursor: pointer;
+  }
+
+  &__eye {
+    margin-right: 30px;
+  }
+
+  &__comments,
+  &__views {
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: #7e7e7e;
+  }
+}

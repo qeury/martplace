@@ -1,0 +1,32 @@
+.join {
+  background-color: #151a20;
+  background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #7221a0 100%);
+
+  &__inner {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  &__head {
+    font-size: 36px;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #e7e7e7;
+    padding-bottom: 55px;
+  }
+
+  &__btn {
+    padding: 16px 43px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
