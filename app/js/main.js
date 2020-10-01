@@ -28,9 +28,8 @@ $(function() {
     slidesToScroll: 1,
   });
 
-  $('.progress__count').counterUp({delay:10, time:1000});
 
-  let mixer = mixitup('.new-product__columns');
+   let mixer = mixitup('.new-product__columns');
 
 
 
